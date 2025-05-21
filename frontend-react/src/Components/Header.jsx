@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import {Link } from "react-router-dom"
 // import { NavLink } from 'react-router-dom'
 // import logo from '../public/stockLogo.jpg'
 
@@ -15,12 +16,12 @@ const Header = () => {
           height="40"
           className="rounded-circle me-2"
         />
-        <span className='text-white fw-bold'>Stock Prediction Portal</span>
+        <Link className='navbar-brand text-white' to="/">Stock Prediction Portal</Link>
         </div>
         <div>
-          <Button text = "Login" class = "btn-outline-info"/>
+          <Button text = "Login" class = "btn-outline-info" url = "login/"/>
           &nbsp;
-          <Button text = "Register" class = "btn-info"/>
+          <Button text = "Register" class = "btn-info" url = "register/"/>
         </div>
       </nav>
 
